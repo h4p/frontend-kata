@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<head>
+    <title>HTML5 Tutorial</title>
+    <style>
+        body {
+            background-color: lightgrey;
+            color: black;
+        }
+
+        p {
+            border: 1px dashed yellow;
+        }
+
+        .special {
+            color:blue;
+        }
+    </style>
+</head>
+<body style="text-align: center;">
+    <h1>Showcase</h1>
+
+    <a href="https://www.w3schools.com">This is a link</a>
+
+    <br>
+
+    <img src="img/not_found.jpg" heigh="400px" width="250px" alt="Eastern hemisphere">
+
+
+    <p>This is a paragraph</p>
+
+    <pre>
+
+      My Bonnie lies over the ocean.
+
+      My Bonnie lies over the sea.
+
+      My Bonnie lies over the ocean.
+
+      Oh, bring back my Bonnie to me.
+    </pre>
+
+    <p style="color:blue;">Do you like blue color?</p>
+
+    <p style="font-family:courier;">Courier has been around for decades</p>
+
+    <p style="text-align:center;">Malcolm in the middle</p>
+
+    <p style="font-size:50px">Larger than life!</p>
+
+    <p>We are <strong>wasting</strong> our planet right now!</p>
+
+    <p>
+        Tokyo is the capitol of Japan, the most populous <em>metropolitan</em> area in the world.
+    </p>
+
+    <p>
+        H<sub>2</sub>O is the scientific term for water
+    </p>
+
+    <p>
+        HTML is <mark>FUN</mark> to learn!
+    </p>
+
+    <p>
+        My favourite color is <del>blue</del> red
+    </p>
+
+    <p>
+        I am being <q>serious</q>
+    </p>
+
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 50 years, WWF has been protecting the future of nature. The world's leading
+        conservation organization, WWF works in 100 countries and is supported by 1.2 million
+        members in the United States and close to 5 million globally.
+    </blockquote>
+
+    <bdo dir="rtl">Can you read it?</bdo>
+
+    <p>
+        The <abbr title="World Health Organization">WHO</abbr> was foundet in 1948.
+    </p>
+
+    <!-- This is a comment -->
+    <a href="default.html">Link with underline</a><br>
+    <a href="default.html" style="text-decoration: none;">Link with <strong>NO</strong> underline</a><br>
+    <a href="default.html" target="_blank">Open in new tab</a><br>
+    <a href="default.html" title="I am the tooltip">Link with tooltip</a><br>
+
+
+    <img src="img/earth.jpg" style="heigh:400px; width:250px;" alt="Eastern hemisphere">
+
+
+    <p>
+       <img src="img/earth.jpg" style="heigh:400px; width:250px; float:right" alt="Eastern hemisphere">
+        This is a paragraph with an image floating right<br>
+        Bringing you even more text
+    </p>
+
+
+    <table style="width:300px;">
+        <caption>Names</caption>
+        <tr>
+            <th colspan="2">Name</th>
+            <th>Points</th>
+        </tr>
+        <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>555-77854</td>
+        </tr>
+    </table>
+
+
+    <ul style="list-style-type: square;">
+        <li>Tea</li>
+        <li>Cofffee</li>
+        <li>Juice</li>
+    </ul>
+
+    <ol type="A">
+        <li>Red</li>
+        <li>Green</li>
+        <li>Blue</li>
+    </ol>
+
+    <ol type="I">
+        <li>Alpha</li>
+        <li>Beta</li>
+        <li>Gamma</li>
+    </ol>
+
+
+    <dl>
+        <dt>Coffee</dt>
+        <dd>-Black hot drink-</dd>
+        <dt>Milk</dt>
+        <dd>-Cold white drink-</dd>
+    </dl>
+
+
+    <p class="special">
+        I am special
+    </p>
+
+    <iframe src="http://w3school.com" width="500" style="border:none;"></iframe>
+
+
+    <p id="demo">Hi</p>
+    <img id="imgswap" src="img/earth.jpg" width="200px"/>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Hello world!";
+        document.getElementById("demo").style.fontSize = "40px";
+        document.getElementById("imgswap").src="img/next-posture.jpg";
+    </script>
+
+    <p>Code example: <code>var counter=1;</code></p>
+
+    <pre>
+        <code>var person = {
+            firstName: "John",
+            lastName: "Doe"
+        }
+        </code>
+    </pre>
+
+    <p>
+        A simple equation: <var>x</var> = 3+2
+    </p>
+
+
+    <form>
+        <input type="button" value="Ok" disabled>
+    </form>
+
+    <form>
+        <input type="radio" value="male" name="gender">Male
+        <input type="radio" value="female" name="gender">Female
+    </form>
+
+    <form action="./action-page.html" method="POST">
+        Name: <input type="text" name="name" placeholder="Your name here">
+        <input type="submit">
+    </form>
+
+    <form action="/action-page.html">
+        <select name="cars">
+            <option value="Volvo">Volvo</option>
+            <option value="Ford">Ford</option>
+        </select>
+        <textarea name="note" maxlength="40"></textarea>
+        <button>Click me</button>
+        <input type="number" min="1" max="5">
+    </form>
+</body>
+</html>

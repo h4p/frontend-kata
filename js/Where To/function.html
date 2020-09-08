@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <script>
+            function myFunction() {
+                document.getElementById('demo').innerHTML = "Paragraph changed!";
+            }
+        </script>
+        <script src="function.js"></script>
+    </head>
+<body>
+
+    <h2>What Can JavaScript Do?</h2>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick="myFunction()">Try running script in head!</button>
+
+    <button type="button" onclick="changeParagraph()">Try running script in body!</button>
+
+    <button type="button" onclick="externalChange()">Try running external script</button>
+
+
+    <script>
+        function changeParagraph() {
+            document.getElementById('demo').innerHTML = "Placing scripts at the bottom of the <body> element \
+             improves the display speed, because script interpretation slows down the display.";
+        }
+    </script>
+
+</body>
+</html>
